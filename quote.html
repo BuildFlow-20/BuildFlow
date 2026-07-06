@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildFlow - Quote</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="brand">BuildFlow</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="contact-hero">
+                <h1>Request a Quote</h1>
+                <p>Tell us about your website project and we’ll provide a custom quote tailored to your needs.</p>
+            </section>
+
+            <section class="contact-form-section">
+                <h2>Quote Request</h2>
+                <form class="contact-form" action="https://formspree.io/f/mzdlowyk" method="POST" enctype="text/plain">
+                    <input type="hidden" name="_next" value="https://buildflow-20.netlify.app/thank-you.html">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="company" placeholder="Company (optional)">
+                    <input type="text" name="website" placeholder="Current Website (optional)">
+                    <textarea name="message" placeholder="Project details and goals" required></textarea>
+                    <button type="submit">Request My Free Quote</button>
+                </form>
+            </section>
+
+            <section class="contact-details">
+                <div class="contact-card">
+                    <h2>Need Help?</h2>
+                    <p>Reach out directly for fast support and project advice.</p>
+                </div>
+                <div class="contact-card">
+                    <h2>📧 Email</h2>
+                    <p><a href="mailto:hello@buildflow.com">hello@buildflow.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <h2>📱 Phone</h2>
+                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <footer>
+        <nav class="footer-nav">
+            <a href="index.html">BuildFlow</a>
+            <a href="services.html">Website Design</a>
+            <a href="services.html">SEO</a>
+            <a href="portfolio.html">Business Websites</a>
+            <a href="services.html">AI Solutions</a>
+        </nav>
+        <nav class="footer-secondary">
+            <a href="mailto:hello@buildflow.com">Email</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+        <p>© 2026 BuildFlow</p>
+    </footer>
+</body>
+</html>
