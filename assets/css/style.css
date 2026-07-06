@@ -435,6 +435,26 @@ nav a:hover {
     color: #22c55e;
 }
 
+.release-notes .changelog-group {
+    margin-top: 30px;
+}
+
+.release-notes .changelog-group h3 {
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+    color: #f8fafc;
+}
+
+.release-notes .changelog-group ul {
+    display: grid;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .project-card,
 .case-card,
 .why-card {
