@@ -1,48 +1,29 @@
---------------------------------------------------------
-BuildFlow
+# BuildFlow
 
-Building modern websites, AI solutions, and software
-for businesses.
+## About
+BuildFlow creates modern, responsive websites for businesses.
 
-Project Progress
-█████████░ 90%
+## Features
+- Responsive Design
+- Contact Forms
+- SEO Ready
+- Netlify Deployment
+- GitHub Integration
 
-Quick Links
-• Home
-• About
-• Services
-• Portfolio
-• Pricing
-• Contact
-• Blog
+## Technologies
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- Netlify
+- Formspree
 
-Project Checklist
-☐ Homepage finished
-☐ About finished
-☐ Services finished
-☐ Portfolio finished
-☐ Pricing finished
-☐ Contact finished
-☐ Blog finished
-☐ FAQ added
-☐ Testimonials added
-☐ Statistics added
-☐ Process section added
-☐ Footer added
-☐ Responsive on mobile
-☐ Images added
-☐ Publish online
+## Folder Structure
+...
 
-Services
-• Website Development
-• AI Automation
-• Mobile Apps
-• E-commerce
-• Cloud Solutions
+## Installation
+...
 
-Contact
-Email: hello@buildflow.com
-Location: Connecticut, USA
-
-© 2026 BuildFlow. All Rights Reserved.
---------------------------------------------------------
+## Deployment
+...
