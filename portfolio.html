@@ -247,8 +247,21 @@
         <section id="contact">
             <h2 class="section-title">Ready to Build Your Next Project?</h2>
             <div class="contact-card">
-                <p>Let's create a modern website together.</p>
-                <a class="button" href="mailto:hello@buildflow.com">Contact Us</a>
+                <p>Let's create a modern website together. Send us a message below.</p>
+                <form
+                  class="contact-form"
+                  action="https://formspree.io/f/mzdlowyk"
+                  method="POST">
+
+                  <input type="hidden" name="_next"
+                         value="https://buildflow-20.netlify.app/thank-you.html">
+
+                  <input type="text" name="name" placeholder="Your name" required>
+                  <input type="email" name="email" placeholder="you@example.com" required>
+                  <textarea name="message" placeholder="Your message" required></textarea>
+
+                  <button type="submit" class="button">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
