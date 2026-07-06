@@ -65,13 +65,41 @@ nav a:hover {
 }
 .hero-card,
 .service-card,
+.pricing-card,
+.post {
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 20px;
+}
+.hero-card {
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.35);
+    padding: 56px 48px;
+    display: grid;
+    gap: 32px;
+}
+.hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.hero-title {
+    font-size: clamp(2.8rem, 4vw, 4.8rem);
+    line-height: 1.02;
+    max-width: 740px;
+}
+.hero-copy {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    max-width: 760px;
+}
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     padding: 60px 20px;
 }
-
 .stat-card {
     background: white;
     border-radius: 12px;
@@ -79,15 +107,12 @@ nav a:hover {
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-
 .stat-card h2 {
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
-
 .stat-card p {
     color: #555;
-}
 }
 .service-card h3,
 .pricing-card h2,
