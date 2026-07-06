@@ -439,6 +439,35 @@ nav a:hover {
     margin: 12px 0;
 }
 
+.technologies {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.technologies ul {
+    display: inline-grid;
+    gap: 12px;
+    margin: 24px auto 0;
+    padding: 0;
+    list-style: none;
+    max-width: 520px;
+    text-align: left;
+}
+
+.technologies li {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 14px;
+    padding: 14px 18px;
+    color: #e2e8f0;
+}
+
+.technologies li:before {
+    content: "✓";
+    margin-right: 10px;
+    color: #22c55e;
+}
+
 .release-notes {
     padding: 70px 20px;
     text-align: center;
