@@ -144,7 +144,9 @@ nav a:hover {
 .project-grid,
 .project-grid,
 .testimonial-grid,
-.process-grid {
+.process-grid,
+.case-grid,
+.why-grid {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 .process-steps {
