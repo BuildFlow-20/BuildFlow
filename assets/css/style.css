@@ -42,15 +42,23 @@ nav a:hover {
     color: #93c5fd;
 }
 .button,
-.button-secondary {
+.button-secondary,
+.btn,
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 999px;
     padding: 16px 28px;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
     transition: transform 0.18s ease, background-color 0.18s ease;
 }
-.button {
+.button,
+.btn,
+.btn-primary {
     background: #22c55e;
     color: #0f172a;
     font-weight: 700;
@@ -60,7 +68,9 @@ nav a:hover {
     color: #e2e8f0;
 }
 .button:hover,
-.button-secondary:hover {
+.button-secondary:hover,
+.btn:hover,
+.btn-primary:hover {
     transform: translateY(-2px);
 }
 .hero-card,
