@@ -406,6 +406,39 @@ nav a:hover {
     transform:translateY(-6px);
 }
 
+.team {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.team-card {
+    max-width: 520px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    padding: 32px;
+    color: #0f172a;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.team-card h2 {
+    margin: 0 0 10px;
+}
+
+.team-card p {
+    color: #475569;
+    line-height: 1.75;
+    margin: 12px 0;
+}
+
 .release-notes {
     padding: 70px 20px;
     text-align: center;
