@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 if (res.ok) {
                     const next = form.querySelector('input[name="_next"]')?.value;
                     if (next) window.location.href = next;
-                    else window.location.href = '/thank-you.html';
+                    else window.location.href = 'https://buildflow-20.netlify.app/thank-you.html';
                 } else {
                     let msg = res.statusText || 'Submission failed';
                     try {
