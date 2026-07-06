@@ -406,6 +406,35 @@ nav a:hover {
     transform:translateY(-6px);
 }
 
+.release-notes {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.release-notes ul {
+    display: inline-grid;
+    gap: 12px;
+    margin: 24px auto 0;
+    padding: 0;
+    list-style: none;
+    max-width: 600px;
+    text-align: left;
+}
+
+.release-notes li {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 14px;
+    padding: 16px 20px;
+    color: #e2e8f0;
+}
+
+.release-notes li:before {
+    content: "✓";
+    margin-right: 10px;
+    color: #22c55e;
+}
+
 .project-card,
 .case-card,
 .why-card {
