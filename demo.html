@@ -146,3 +146,91 @@ window.scrollTo(0,document.body.scrollHeight);
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Demo | BuildFlow</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#0b1220;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.box{
+background:#111827;
+padding:40px;
+border-radius:15px;
+max-width:600px;
+width:90%;
+text-align:center;
+}
+
+input{
+width:100%;
+padding:15px;
+margin-top:20px;
+border-radius:10px;
+border:none;
+font-size:16px;
+}
+
+button{
+margin-top:20px;
+padding:15px 30px;
+border:none;
+background:#2563eb;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+#response{
+margin-top:30px;
+font-size:18px;
+line-height:1.6;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>🤖 BuildFlow AI Demo</h1>
+
+<p>Ask anything about AI automation for your business.</p>
+
+<input id="question" placeholder="Example: How can AI help my roofing business?">
+
+<button onclick="reply()">Ask AI</button>
+
+<div id="response"></div>
+
+</div>
+
+<script>
+
+function reply(){
+
+let q=document.getElementById("question").value;
+
+document.getElementById("response").innerHTML=
+"<strong>AI Response:</strong><br><br>AI can answer customers 24/7, book appointments automatically, qualify leads, send follow-up texts and emails, and help your business save time and increase sales. Contact BuildFlow Support for a custom AI solution.";
+
+}
+
+</script>
+
+</body>
+</html>
