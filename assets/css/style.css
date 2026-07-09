@@ -548,3 +548,25 @@ nav a:hover {
 .case-card a {
   margin-top: 16px;
 }
+/* Floating Book AI Audit Button */
+
+.floating-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #22c55e;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+    z-index: 9999;
+    transition: .3s;
+}
+
+.floating-btn:hover {
+    background: #16a34a;
+    transform: translateY(-3px);
+}
