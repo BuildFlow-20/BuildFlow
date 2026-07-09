@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Appointment Booking Demo | BuildFlow Support</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f5f7fb;
+margin:0;
+padding:40px;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+h1{
+color:#0057ff;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#0057ff;
+color:white;
+padding:14px 22px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#0043c7;
+}
+
+.success{
+display:none;
+margin-top:20px;
+padding:15px;
+background:#e8ffe8;
+border:1px solid #8fd48f;
+border-radius:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Roofing AI Appointment Demo</h1>
+
+<p>
+See how BuildFlow Support can automatically collect new customer leads.
+</p>
+
+<form onsubmit="submitDemo(event)">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<select required>
+
+<option value="">Select Service</option>
+
+<option>Roof Repair</option>
+
+<option>Roof Replacement</option>
+
+<option>Leak Inspection</option>
+
+<option>Emergency Repair</option>
+
+</select>
+
+<textarea
+placeholder="Tell us about your project"
+rows="5"></textarea>
+
+<button type="submit">
+
+Request Free Estimate
+
+</button>
+
+</form>
+
+<div class="success" id="success">
+
+<h2>✅ Thank You!</h2>
+
+<p>
+
+Your request has been received.
+
+A roofing specialist will contact you soon.
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function submitDemo(e){
+
+e.preventDefault();
+
+document.getElementById("success").style.display="block";
+
+window.scrollTo(0,document.body.scrollHeight);
+
+}
+
+</script>
+
+</body>
+
+</html>
