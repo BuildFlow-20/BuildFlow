@@ -61,10 +61,4 @@
     <priority>0.2</priority>
   </url>
 
-  <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/404.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-
 </urlset>
