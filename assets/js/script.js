@@ -51,4 +51,16 @@ const year = new Date().getFullYear();
 document.querySelectorAll(".current-year").forEach(item => {
     item.textContent = year;
 });
+function calculateSavings() {
+    const hours = parseFloat(document.getElementById("hours").value) || 0;
+    const wage = parseFloat(document.getElementById("wage").value) || 0;
+    const automation = parseFloat(document.getElementById("automation").value) || 0;
 
+    const weeklySavings = hours * wage * (automation / 100);
+    const yearlySavings = weeklySavings * 52;
+
+    document.getElementById("result").innerHTML =
+        "<h3>Estimated Savings</h3>" +
+        "<p><strong>Weekly:</strong> $" + weeklySavings.toFixed(2) + "</p>" +
+        "<p><strong>Yearly:</strong> $" + yearlySavings.toFixed(2) + "</p>";
+}
