@@ -519,3 +519,24 @@ section {
 .dark-mode a {
     color: #4da3ff;
 }
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background: #0077ff;
+    color: white;
+    cursor: pointer;
+    padding: 14px 18px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    background: #005fcc;
+}
