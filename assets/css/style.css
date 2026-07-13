@@ -496,3 +496,26 @@ section {
 /* ========================================
    End of BuildFlow Support Styles
 ======================================== */
+
+.dark-mode {
+    background: #111;
+    color: #fff;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background: #1b1b1b;
+}
+
+.dark-mode .service-card,
+.dark-mode .service-item,
+.dark-mode .why-card,
+.dark-mode .process-card {
+    background: #222;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.dark-mode a {
+    color: #4da3ff;
+}
