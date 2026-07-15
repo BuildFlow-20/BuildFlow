@@ -1,4 +1,5 @@
 User-agent: *
+
 Allow: /
 
-Sitemap: https://buildflow-20.github.io/BuildFlow/sitemap.xml
+Sitemap: https://buildflowsupport.com/sitemap.xml
