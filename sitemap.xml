@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/</loc>
+    <loc>https://buildflowsupport.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/about.html</loc>
+    <loc>https://buildflowsupport.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/services.html</loc>
+    <loc>https://buildflowsupport.com/services.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/portfolio.html</loc>
+    <loc>https://buildflowsupport.com/portfolio.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/pricing.html</loc>
+    <loc>https://buildflowsupport.com/pricing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/blog.html</loc>
+    <loc>https://buildflowsupport.com/blog.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/contact.html</loc>
+    <loc>https://buildflowsupport.com/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/privacy.html</loc>
+    <loc>https://buildflowsupport.com/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/terms.html</loc>
+    <loc>https://buildflowsupport.com/terms.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/thank-you.html</loc>
+    <loc>https://buildflowsupport.com/thank-you.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
 
   <url>
-    <loc>https://buildflow-20.github.io/BuildFlow/404.html</loc>
+    <loc>https://buildflowsupport.com/404.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
