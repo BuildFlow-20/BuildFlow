@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://buildflowsupport.com/sitemap.xml
+Sitemap: https://buildflowsupport.org/sitemap.xml
