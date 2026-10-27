@@ -4,8 +4,11 @@
 
 - [ ] Review all pages for accuracy and completeness
 - [ ] Confirm navigation works on every page
-- [ ] Validate all forms submit successfully
-- [ ] Check phone, email, and external links
+- [ ] Check that no page advertises unverified results, fake testimonials, or unsupported guarantees
+- [ ] Label sample projects and demo forms as non-production examples
+- [ ] Test the real contact form with an authorized test after confirming where submissions are delivered
+- [ ] Confirm demo forms do not send or store sample data
+- [ ] Check email, written-contact options, and external links
 - [ ] Verify mobile and tablet layouts
 - [ ] Review page titles and metadata
 
