@@ -1,70 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://buildflowsupport.org/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://buildflowsupport.org/about.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://buildflowsupport.org/services.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://buildflowsupport.org/portfolio.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://buildflowsupport.org/pricing.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://buildflowsupport.org/blog.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
-
+  <url>
+    <loc>https://buildflowsupport.org/faq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://buildflowsupport.org/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://buildflowsupport.org/privacy.html</loc>
+    <loc>https://buildflowsupport.org/accessibility.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
-
   <url>
-    <loc>https://buildflowsupport.org/terms.html</loc>
+    <loc>https://buildflowsupport.org/privacy-policy.html</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.3</priority>
   </url>
-
   <url>
-    <loc>https://buildflowsupport.org/thank-you.html</loc>
+    <loc>https://buildflowsupport.org/terms-of-service.html</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
-
-  <url>
-    <loc>https://buildflowsupport.org/404.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-
 </urlset>
