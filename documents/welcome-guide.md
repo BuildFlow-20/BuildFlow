@@ -1,4 +1,6 @@
-# Welcome Guide
+# BuildFlow Support — Welcome Guide Template
+
+> Template only. Complete project-specific placeholders and confirm the final scope, fees, dates, and responsibilities in writing before sending.
 
 ## Welcome to BuildFlow
 
@@ -14,8 +16,8 @@ Thank you for choosing BuildFlow for your website project. This guide outlines w
 
 - Brand assets: logo, colors, fonts
 - Existing copy or content direction
-- Product/service details, pricing, and testimonials
-- Access details when needed for hosting or domains
+- Accurate business details, approved service copy, pricing, and authentic testimonials if available
+- Access details only when necessary; never send passwords by email. Use secure account invitations where supported.
 
 ## Our Process
 
@@ -31,7 +33,7 @@ Thank you for choosing BuildFlow for your website project. This guide outlines w
 ## Communication
 
 - Primary point of contact: **[Name]**
-- Preferred channel: **Email / Slack / Phone**
+- Preferred channel: **Email or written messages**
 - Response window: **[X business days]**
 
 ## Review and Feedback
@@ -48,4 +50,4 @@ Thank you for choosing BuildFlow for your website project. This guide outlines w
 
 ## Contact
 
-If you have questions at any time, email us at **hello@buildflow.com** or visit **contact.html** for quick support.
+If you have questions at any time, email us at **Support@buildflowsupport.org** or visit **contact.html** for quick support.
