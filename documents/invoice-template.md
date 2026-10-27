@@ -1,5 +1,7 @@
 # Invoice Template
 
+> Template only. Confirm the correct legal business name, invoice details, tax treatment, due date, and payment method before sending. Never place passwords or sensitive account credentials on an invoice.
+
 **Invoice Number:**
 
 **Date:**
@@ -25,4 +27,4 @@
 
 ## Payment Instructions
 
-Provide payment details and due date.
+Provide the agreed payment method and due date using a secure, appropriate channel.
