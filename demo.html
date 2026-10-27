@@ -3,234 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Appointment Booking Demo | BuildFlow Support</title>
-
+<title>Interactive Workflow Demo | BuildFlow Support</title>
+<meta name="description" content="A sample interactive workflow concept from BuildFlow Support.">
+<meta name="robots" content="noindex, follow">
+<link rel="stylesheet" href="assets/css/style.css">
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#f5f7fb;
-margin:0;
-padding:40px;
-}
-
-.container{
-max-width:700px;
-margin:auto;
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-}
-
-h1{
-color:#0057ff;
-}
-
-input,select,textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:8px;
-}
-
-button{
-background:#0057ff;
-color:white;
-padding:14px 22px;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
-}
-
-button:hover{
-background:#0043c7;
-}
-
-.success{
-display:none;
-margin-top:20px;
-padding:15px;
-background:#e8ffe8;
-border:1px solid #8fd48f;
-border-radius:8px;
-}
+.demo-wrap{max-width:760px;margin:3rem auto;padding:1.5rem}
+.demo-notice{border:1px solid #64748b;border-radius:12px;padding:1rem;margin:1rem 0;background:#111827;color:#f8fafc}
+.demo-chat{border:1px solid #334155;border-radius:12px;padding:1.5rem;margin-top:1.5rem}
+.demo-chat label{display:block;margin:1rem 0 .4rem}
+.demo-chat input{width:100%;padding:.8rem;border-radius:8px;border:1px solid #64748b}
+.demo-chat button{margin-top:1rem}
+#demo-response{margin-top:1rem;padding:1rem;border-radius:8px;background:#e2e8f0;color:#0f172a;min-height:3rem}
 </style>
-
 </head>
-
 <body>
-
-<div class="container">
-
-<h1>Roofing AI Appointment Demo</h1>
-
-<p>
-See how BuildFlow Support can automatically collect new customer leads.
-</p>
-
-<form onsubmit="submitDemo(event)">
-
-<input
-type="text"
-placeholder="Your Name"
-required>
-
-<input
-type="email"
-placeholder="Email Address"
-required>
-
-<input
-type="tel"
-placeholder="Phone Number"
-required>
-
-<select required>
-
-<option value="">Select Service</option>
-
-<option>Roof Repair</option>
-
-<option>Roof Replacement</option>
-
-<option>Leak Inspection</option>
-
-<option>Emergency Repair</option>
-
-</select>
-
-<textarea
-placeholder="Tell us about your project"
-rows="5"></textarea>
-
-<button type="submit">
-
-Request Free Estimate
-
-</button>
-
-</form>
-
-<div class="success" id="success">
-
-<h2>✅ Thank You!</h2>
-
-<p>
-
-Your request has been received.
-
-A roofing specialist will contact you soon.
-
-</p>
-
+<div class="page demo-wrap">
+<a href="index.html">← Back to BuildFlow Support</a>
+<h1>Interactive Workflow Demo</h1>
+<div class="demo-notice"><strong>Demonstration only:</strong> This is a small, scripted example, not a live AI assistant, appointment system, or customer-data service. Nothing entered here is submitted or saved.</div>
+<section class="demo-chat">
+<h2>Try a Sample Question</h2>
+<p>Enter a general question to see a prewritten example response.</p>
+<label for="demo-question">Your sample question</label>
+<input id="demo-question" type="text" maxlength="180" placeholder="Example: What might a roofing website include?">
+<button class="btn-primary" type="button" id="demo-ask">Show example response</button>
+<div id="demo-response" role="status" aria-live="polite">Your illustrative response will appear here.</div>
+</section>
+<section class="cta">
+<h2>Discuss a Real Project</h2>
+<p>BuildFlow Support focuses on practical small-business websites and scoped digital workflows. Send a written inquiry to discuss feasibility and costs.</p>
+<a class="btn-primary" href="contact.html">Contact BuildFlow Support</a>
+</section>
 </div>
-
-</div>
-
 <script>
-
-function submitDemo(e){
-
-e.preventDefault();
-
-document.getElementById("success").style.display="block";
-
-window.scrollTo(0,document.body.scrollHeight);
-
-}
-
+document.getElementById("demo-ask").addEventListener("click", function () {
+  const question = document.getElementById("demo-question").value.trim();
+  const response = document.getElementById("demo-response");
+  if (!question) {
+    response.textContent = "Enter a general sample question first.";
+    return;
+  }
+  response.textContent = "Example response (prewritten, not AI-generated): A business website could explain services, service area, business hours, and include a contact or quote request form. Any booking or automation features would need separate scoping and may have third-party costs.";
+});
 </script>
-
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Demo | BuildFlow</title>
-
-<style>
-body{
-font-family:Arial,sans-serif;
-background:#0b1220;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-margin:0;
-}
-
-.box{
-background:#111827;
-padding:40px;
-border-radius:15px;
-max-width:600px;
-width:90%;
-text-align:center;
-}
-
-input{
-width:100%;
-padding:15px;
-margin-top:20px;
-border-radius:10px;
-border:none;
-font-size:16px;
-}
-
-button{
-margin-top:20px;
-padding:15px 30px;
-border:none;
-background:#2563eb;
-color:white;
-font-size:18px;
-border-radius:10px;
-cursor:pointer;
-}
-
-#response{
-margin-top:30px;
-font-size:18px;
-line-height:1.6;
-}
-</style>
-
-</head>
-
-<body>
-
-<div class="box">
-
-<h1>🤖 BuildFlow AI Demo</h1>
-
-<p>Ask anything about AI automation for your business.</p>
-
-<input id="question" placeholder="Example: How can AI help my roofing business?">
-
-<button onclick="reply()">Ask AI</button>
-
-<div id="response"></div>
-
-</div>
-
-<script>
-
-function reply(){
-
-let q=document.getElementById("question").value;
-
-document.getElementById("response").innerHTML=
-"<strong>AI Response:</strong><br><br>AI can answer customers 24/7, book appointments automatically, qualify leads, send follow-up texts and emails, and help your business save time and increase sales. Contact BuildFlow Support for a custom AI solution.";
-
-}
-
-</script>
-
 </body>
 </html>
