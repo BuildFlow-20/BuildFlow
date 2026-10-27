@@ -1,208 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AI Savings Calculator | BuildFlow Support</title>
-
-<meta name="description"
-content="Estimate how much time and money AI automation could save your business.">
-
+<title>Time-Savings Estimator | BuildFlow Support</title>
+<meta name="description" content="An illustrative estimator for exploring the possible value of reducing repetitive administrative work.">
+<meta name="robots" content="index, follow">
 <link rel="icon" href="assets/images/favicon.png">
 <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
-
 <body>
-
 <div class="page">
-
 <header>
-
-<div class="brand">
-
-<a href="index.html">
-<img src="assets/images/logo.png"
-alt="BuildFlow Support Logo"
-height="45">
-</a>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="portfolio.html">Success Stories</a>
-<a href="pricing.html">Pricing</a>
-<a href="blog.html">Blog</a>
-<a href="contact.html">Contact</a>
-
+<div class="brand"><a href="index.html"><img src="assets/images/logo.png" alt="BuildFlow Support Logo" width="180" height="45"></a></div>
+<nav aria-label="Main Navigation">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="pricing.html">Pricing</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
 </nav>
-
 </header>
-
 <main>
-
 <section class="hero">
-
-<h1>AI Savings Calculator</h1>
-
-<p>
-
-This illustrative calculator estimates possible time savings based on the values you enter. Actual results vary; this is not a guarantee or a quote.
-
-</p>
-
+<h1>Time-Savings Estimator</h1>
+<p>This simple estimator lets you explore a hypothetical scenario for reducing repetitive work. It is not a prediction, guarantee, or quote, and it does not determine whether automation is suitable for your business.</p>
 </section>
-
 <section class="service-list">
-
 <div class="service-item">
-
-<h2>Enter Your Information</h2>
-
-<form>
-
-<label>Hours spent on repetitive tasks each week</label>
-
-<input type="number" placeholder="40">
-
-<label>Average hourly wage ($)</label>
-
-<input type="number" placeholder="25">
-
-<label>Estimated automation percentage (%)</label>
-
-<input type="number" placeholder="50">
-
-<button class="btn-primary" type="button">
-
-Calculate Savings
-
-</button>
-
-</form>
-
+<h2>Enter Your Estimates</h2>
+<label for="hours">Hours spent on repetitive tasks each week</label>
+<input type="number" id="hours" min="0" step="0.5" value="5">
+<label for="wage">Estimated hourly labor cost ($)</label>
+<input type="number" id="wage" min="0" step="0.5" value="20">
+<label for="automation">Hypothetical portion of time reduced (%)</label>
+<input type="number" id="automation" min="0" max="100" step="5" value="20">
+<button type="button" class="btn-primary" onclick="calculateSavings()">Calculate Example</button>
+<div id="result" role="status" aria-live="polite"></div>
+<p><small>The result is a mathematical illustration only. It excludes setup fees, subscriptions, maintenance, errors, and changes in workload.</small></p>
 </div>
-<div class="service-item">
-
-<h2>Potential Benefits</h2>
-
-<ul>
-<li>⏱️ Potential time savings (estimate only)</li>
-<li>💰 Potential cost impact (estimate only)</li>
-<li>📈 Explore workflow improvements</li>
-<li>🤖 Discuss practical website workflows</li>
-<li>💬 Improve customer response times</li>
-</ul>
-
-</div>
-
-</section>
-
-<section class="why-us">
-
-<h2>Why Use AI Automation?</h2>
-
-<div class="why-grid">
-
-<div class="why-card">
-<h3>⏰ Save Time</h3>
-<p>Discuss practical website workflows so your team can focus on higher-value work.</p>
-</div>
-
-<div class="why-card">
-<h3>💵 Reduce Costs</h3>
-<p>Lower operating expenses by automating routine processes.</p>
-</div>
-
-<div class="why-card">
-<h3>😊 Better Customer Experience</h3>
-<p>Respond to customers 24/7 with AI-powered chatbots and voice assistants.</p>
-</div>
-
-<div class="why-card">
-<h3>📈 Start with a clear website</h3>
-<p>Scale your business with automation that works around the clock.</p>
-</div>
-
-</div>
-
 </section>
 <section class="cta">
-
-<h2>Ready to Discover Your AI Savings?</h2>
-
-<p>
-
-Book a free AI audit and we'll help you identify opportunities to save time, reduce costs, and grow your business with AI automation.
-
-</p>
-
-<a href="contact.html"
-target="_blank"
-class="btn-primary">
-
-Book Your Free AI Audit
-
-</a>
-
+<h2>Start With Your Website or Workflow</h2>
+<p>Tell us what you would like to improve. We will communicate in writing and agree on the scope, price, timeline, and any third-party costs before paid work begins.</p>
+<a href="contact.html" class="btn-primary">Request a Written Quote</a>
 </section>
-
 </main>
-
 <footer>
-
-<nav class="footer-nav">
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="portfolio.html">Success Stories</a>
-<a href="pricing.html">Pricing</a>
-<a href="blog.html">Blog</a>
-<a href="contact.html">Contact</a>
-
+<h2>BuildFlow Support</h2>
+<p>Practical websites and digital workflows for small businesses.</p>
+<nav class="footer-nav" aria-label="Footer Navigation">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="pricing.html">Pricing</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
 </nav>
-
-<nav class="footer-secondary">
-
-<a href="mailto:Support@buildflowsupport.org">Email</a>
-<a href="privacy-policy.html">Privacy</a>
-<a href="terms-of-service.html">Terms</a>
-
-</nav>
-
-<p>© 2026 BuildFlow Support. All rights reserved.</p>
-
+<nav class="footer-secondary" aria-label="Legal Navigation"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></nav>
+<p class="copyright">© 2026 BuildFlow Support. All rights reserved.</p>
+<button id="theme-toggle" class="btn-secondary">🌙 Dark Mode</button><button id="topBtn" title="Back to Top">⬆️</button>
 </footer>
-
 </div>
-
 <script src="assets/js/script.js"></script>
-
-  <label>Hours spent on repetitive tasks each week</label>
-<input type="number" id="hours" placeholder="40">
-
-<label>Average hourly wage ($)</label>
-<input type="number" id="wage" placeholder="25">
-
-<label>Estimated automation percentage (%)</label>
-<input type="number" id="automation" placeholder="50">
-
-<button type="button" class="btn-primary" onclick="calculateSavings()">
-Calculate Savings
-</button>
-
-<div id="result"></div>
-  
 </body>
-
 </html>
