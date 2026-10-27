@@ -1,59 +1,49 @@
-# 🚀 BuildFlow Support
+# BuildFlow Support
 
-BuildFlow Support is an AI automation and web design agency focused on helping small businesses save time, automate repetitive tasks, and grow faster.
+BuildFlow Support provides practical website design, website updates, contact and quote forms, and selected digital workflows for small businesses. Project communication is handled through email and written messages.
 
-## 🌐 Live Website
+## Live website
 
-https://buildflow-20.github.io/BuildFlow/
+https://buildflowsupport.org/
 
----
+## Current focus
 
-## 💼 Services
+- Mobile-friendly small-business websites
+- Website updates and redesigns
+- Contact and quote request forms
+- Appointment/booking options when the required tool and scope are agreed
+- Practical digital workflows scoped to the project's existing tools
 
-- 🤖 AI Chatbots
-- 📅 AI Appointment Booking
-- 📞 AI Voice Agents
-- 📧 Email & SMS Automation
-- ⚙️ Workflow Automation
-- 💬 CRM Automation
-- 🌐 Website Design
-- 📈 Lead Generation
+More advanced integrations depend on platform capabilities and may involve separate third-party subscription or usage costs. Deliverables, price, timeline, revisions, and any ongoing costs should be agreed in writing before paid work begins.
 
----
+## Technology
 
-## 🛠 Technologies
-
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
-- Git
 - GitHub Pages
-- Formspree
+- Formspree contact form (submission delivery should be tested in the live site)
 
----
-
-## 📄 Pages
+## Main pages
 
 - Home
 - About
 - Services
-- Portfolio
+- Portfolio / demonstration concepts
 - Pricing
 - Blog
+- FAQ
 - Contact
+- Accessibility
 - Privacy Policy
 - Terms of Service
-- Thank You
-- 404
 
----
+## Contact
 
-## 📧 Contact
+Email: Support@buildflowsupport.org
 
-**Email:** buildflowsuppot@gmail.com
+## Repository notes
 
----
-
-## 📌 License
+The site is a static HTML/CSS/JavaScript website published from the `main` branch at the repository root. The custom domain is configured through the `CNAME` file.
 
 © 2026 BuildFlow Support. All rights reserved.
