@@ -1,4 +1,4 @@
-# Brand Guide
+# BuildFlow Support Brand Guide
 
 ## Brand Overview
 
@@ -26,10 +26,11 @@ BuildFlow is a modern web design and development studio focused on fast, respons
 
 - Clear and professional
 - Confident and helpful
-- Focused on business growth and quality delivery
+- Focused on clear communication, useful design, and realistic project scope
 
 ## Usage
 
 - Use simple, friendly language.
-- Highlight benefits clearly.
+- Describe benefits without guarantees or unsupported customer-result claims.
+- Label samples and demo concepts clearly; do not present them as paid client work.
 - Keep layouts clean, fast, and responsive.
