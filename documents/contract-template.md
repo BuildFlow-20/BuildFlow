@@ -1,4 +1,6 @@
-# BuildFlow Contract Template
+# BuildFlow Support — Contract Template
+
+> **Draft template only, not legal advice.** Customize it for the project and have a qualified professional review it before using it as a binding agreement. Do not send to a client with unresolved placeholders.
 
 ## Introduction
 
@@ -33,7 +35,7 @@ This contract is entered into as of **[Date]** between **BuildFlow** and **[Clie
 
 ### BuildFlow
 - Provide design, development, and quality assurance
-- Maintain regular communication and feedback cadence
+- Communicate through the agreed written channel and document key approvals
 - Deliver files on schedule
 
 ### Client
@@ -48,7 +50,7 @@ This contract is entered into as of **[Date]** between **BuildFlow** and **[Clie
 
 ## Terms and Conditions
 
-- BuildFlow retains ownership of intellectual property until full payment is received.
+- Ownership, licensing, source files, third-party assets, and handoff terms must be clearly specified in the final written agreement.
 - Final website files will be delivered once the invoice is paid in full.
 - Cancellation requests must be submitted in writing.
 
