@@ -1,4 +1,6 @@
-# Maintenance Plan
+# Website Maintenance Plan Template
+
+> Template only. Agree on availability, response windows, scope, prices, access, backups, and third-party responsibilities in writing before selling ongoing maintenance.
 
 ## Overview
 
@@ -7,9 +9,9 @@ Describe the ongoing website maintenance services offered.
 ## Included Services
 
 - Content updates
-- Security monitoring
+- Security and dependency checks only where the hosting platform and tools provide access
 - Performance optimization
-- Backup management
+- Backup coordination where supported by the hosting provider
 - Plugin/theme updates
 
 ## Schedule
