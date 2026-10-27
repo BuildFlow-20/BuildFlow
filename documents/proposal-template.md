@@ -1,14 +1,16 @@
 # Proposal Template
 
+> **Template only, not a binding quote or legal advice.** Replace all placeholders and agree on scope, fees, timing, revisions, access, ownership, third-party charges, and acceptance in writing before presenting it to a client.
+
 ## Project Overview
 
 Describe the project goals, scope, and objectives.
 
 ## Deliverables
 
-- Deliverable 1
-- Deliverable 2
-- Deliverable 3
+- Specific deliverable and page/feature scope
+- Content and revision limits
+- Testing, handoff, and what is expressly excluded
 
 ## Timeline
 
