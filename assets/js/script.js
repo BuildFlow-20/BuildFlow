@@ -62,3 +62,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (button) button.addEventListener("click", calculate);
     }
 });
+
+
+// Keep the calculator's existing inline button compatible.
+window.calculateSavings = function () {
+    const read = (id) => Math.max(0, Number.parseFloat(document.getElementById(id)?.value) || 0);
+    const hours = read("hours");
+    const wage = read("wage");
+    const automation = Math.min(100, read("automation"));
+    const weekly = hours * wage * (automation / 100);
+    const result = document.getElementById("result");
+    if (!result) return;
+    result.replaceChildren();
+    const heading = document.createElement("h3");
+    heading.textContent = "Estimated Savings";
+    const week = document.createElement("p");
+    week.textContent = "Weekly: $" + weekly.toFixed(2);
+    const year = document.createElement("p");
+    year.textContent = "Yearly: $" + (weekly * 52).toFixed(2);
+    result.append(heading, week, year);
+};
