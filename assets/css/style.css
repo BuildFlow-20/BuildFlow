@@ -784,3 +784,110 @@ footer {
         max-width: 100%;
     }
 }
+
+
+/* Quality fixes: responsive navigation, accessible controls, and a real light theme */
+body.light-mode {
+    color-scheme: light;
+    background: #f8fafc;
+    color: #172033;
+}
+body.light-mode header,
+body.light-mode footer {
+    background: #ffffff;
+    color: #172033;
+    border-color: #dbe5f0;
+}
+body.light-mode nav a,
+body.light-mode .footer-nav a,
+body.light-mode .footer-secondary a {
+    color: #172033;
+}
+body.light-mode .hero {
+    background: linear-gradient(180deg, #eff6ff, #f8fafc);
+}
+body.light-mode .hero h1 {
+    background: linear-gradient(100deg, #172033, #1d4ed8, #0369a1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+body.light-mode .hero p,
+body.light-mode .trust p,
+body.light-mode .service-item p,
+body.light-mode .service-card p,
+body.light-mode .why-card p,
+body.light-mode .process-card p,
+body.light-mode .technologies li,
+body.light-mode footer p {
+    color: #334155;
+}
+body.light-mode .service-item,
+body.light-mode .service-card,
+body.light-mode .why-card,
+body.light-mode .process-card,
+body.light-mode .cta {
+    background: #ffffff;
+    color: #172033;
+    border-color: #dbe5f0;
+}
+body.light-mode .trust h2,
+body.light-mode .why-us > h2,
+body.light-mode .process > h2,
+body.light-mode .stats > h2,
+body.light-mode .industries > h2,
+body.light-mode .technologies > h2,
+body.light-mode .cta h2 {
+    color: #172033;
+}
+body.light-mode .btn-secondary {
+    color: #172033;
+    border-color: #64748b;
+}
+body.light-mode .contact-section {
+    background: #ffffff;
+    color: #172033;
+    border-color: #dbe5f0;
+}
+body.light-mode .contact-section label,
+body.light-mode .contact-section h2 {
+    color: #172033;
+}
+body.light-mode .contact-section p,
+body.light-mode .contact-section a {
+    color: #1d4ed8;
+}
+@media (max-width: 900px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+        padding: 16px 20px;
+    }
+    header nav {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        overflow-wrap: anywhere;
+    }
+    header nav a {
+        padding: 5px 0;
+    }
+    .service-list,
+    .services-grid,
+    .why-grid,
+    .pricing-grid,
+    .process-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .hero h1 { font-size: clamp(2rem, 9vw, 2.7rem); }
+    .hero-buttons { flex-direction: column; align-items: stretch; }
+    .hero-buttons a { text-align: center; margin: 6px 0; }
+    .contact-section { margin: 24px 12px; padding: 18px; }
+    footer { overflow-wrap: anywhere; }
+}
