@@ -3,148 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant Website | BuildFlow Support</title>
+  <meta name="description" content="A premium restaurant website concept by BuildFlow Support, featuring a refined dining identity, sample menu, gallery, and reservation preview.">
+  <meta name="theme-color" content="#090d12">
+  <meta name="robots" content="noindex, follow">
+  <title>Maison Ember — Restaurant Website Concept | BuildFlow Support</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/experience.css">
   <link rel="stylesheet" href="../../assets/css/interior.css">
+  <style>
+    :root{--restaurant-ink:#090d12;--restaurant-panel:#111820;--restaurant-gold:#d8b779;--restaurant-muted:#b7b2a8}
+    body.restaurant-demo{background:var(--restaurant-ink);color:#f5f0e8}
+    .restaurant-demo .bf-header{background:rgba(7,11,16,.96);border-bottom-color:rgba(216,183,121,.22)}
+    .restaurant-demo .bf-brand{font-family:"Playfair Display",serif;letter-spacing:.12em;color:#f6eee0}
+    .restaurant-demo .bf-nav a{color:#e5dfd4}
+    .restaurant-demo .bf-nav-cta{border-color:var(--restaurant-gold);color:var(--restaurant-gold)}
+    .restaurant-demo .bf-footer{background:#070a0e;border-top:1px solid rgba(216,183,121,.2)}
+    .restaurant-demo .project-page{max-width:none;padding:0 0 80px}
+    .restaurant-demo .project-page section{max-width:1160px;margin:0 auto;padding:80px 28px;border:0;border-bottom:1px solid rgba(216,183,121,.16);background:transparent}
+    .restaurant-demo .project-page h1,.restaurant-demo .project-page h2,.restaurant-demo .project-page h3{font-family:"Playfair Display",serif;letter-spacing:-.025em;color:#f6eee0}
+    .restaurant-demo .project-page p{color:var(--restaurant-muted);font-size:14px;line-height:1.9}
+    .restaurant-demo .restaurant-hero{max-width:none!important;min-height:660px;display:grid;align-items:end;padding:100px max(28px,calc((100vw - 1160px)/2)) 80px!important;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(5,8,12,.92) 0%,rgba(5,8,12,.63) 52%,rgba(5,8,12,.12) 100%),linear-gradient(0deg,rgba(5,8,12,.8),transparent 45%),url("../../assets/images/restaurant.jpg") center/cover no-repeat!important;border-bottom:1px solid rgba(216,183,121,.3)!important}
+    .restaurant-demo .restaurant-hero .eyebrow,.restaurant-demo .restaurant-eyebrow{color:var(--restaurant-gold);font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+    .restaurant-demo .restaurant-hero h1{font-size:clamp(58px,9vw,112px);line-height:.98;max-width:760px;margin:18px 0 22px}
+    .restaurant-demo .restaurant-hero h1 span{color:var(--restaurant-gold);font-style:italic}
+    .restaurant-demo .restaurant-hero .hero-copy{max-width:520px;font-size:15px;color:#e1d9ca}
+    .restaurant-demo .restaurant-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .restaurant-demo .restaurant-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid var(--restaurant-gold);background:var(--restaurant-gold);color:#14120e;text-decoration:none;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .restaurant-demo .restaurant-button.secondary{background:transparent;color:#f4e9d4}
+    .restaurant-demo .section-intro{max-width:700px;margin-bottom:32px}
+    .restaurant-demo .section-intro h2{font-size:clamp(36px,5vw,58px);line-height:1.08;margin:12px 0}
+    .restaurant-demo .story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+    .restaurant-demo .story-photo{min-height:410px;background:url("../../assets/images/restaurant.jpg") center/cover no-repeat;border:1px solid rgba(216,183,121,.25)}
+    .restaurant-demo .menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 38px}
+    .restaurant-demo .menu-card{padding:23px 0;border:0;border-bottom:1px solid rgba(216,183,121,.2);background:transparent}
+    .restaurant-demo .menu-card .dish-row{display:flex;justify-content:space-between;gap:18px;align-items:baseline}
+    .restaurant-demo .menu-card h3{font-size:21px;margin:0}
+    .restaurant-demo .menu-card .price{color:var(--restaurant-gold);font-size:14px;white-space:nowrap}
+    .restaurant-demo .menu-card p{font-size:12px;margin:8px 0 0}
+    .restaurant-demo .gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:12px}
+    .restaurant-demo .gallery-item{min-height:250px;padding:0;border:1px solid rgba(216,183,121,.22);background-size:cover;background-position:center}
+    .restaurant-demo .gallery-item:first-child{min-height:360px;grid-row:span 2;background-image:url("../../assets/images/restaurant.jpg")}
+    .restaurant-demo .gallery-item:nth-child(2){background-image:linear-gradient(135deg,#37281c,#b18a52 45%,#17120f)}
+    .restaurant-demo .gallery-item:nth-child(3){background-image:linear-gradient(135deg,#17251e,#7d8c64 48%,#111710)}
+    .restaurant-demo .gallery-item:nth-child(4){background-image:linear-gradient(135deg,#2a1c1b,#98634e 50%,#15100f)}
+    .restaurant-demo .reservation-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:42px;align-items:start}
+    .restaurant-demo .reservation-form{background:var(--restaurant-panel);border:1px solid rgba(216,183,121,.25);padding:30px}
+    .restaurant-demo .reservation-form form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .restaurant-demo .reservation-form label{font-size:11px;color:#e9dfcf}
+    .restaurant-demo .reservation-form input,.restaurant-demo .reservation-form select,.restaurant-demo .reservation-form textarea{width:100%;margin-top:7px;padding:13px;background:#090f15;color:#f5f0e8;border:1px solid #39414a;border-radius:0;font:14px "DM Sans",sans-serif}
+    .restaurant-demo .reservation-form input:focus,.restaurant-demo .reservation-form select:focus{outline:2px solid var(--restaurant-gold);outline-offset:2px}
+    .restaurant-demo .reservation-form .full{grid-column:1/-1}
+    .restaurant-demo .reservation-form button{min-height:45px;background:#343434;color:#aaa;border:1px solid #666;cursor:not-allowed;letter-spacing:.1em;text-transform:uppercase;font-size:10px}
+    .restaurant-demo .demo-only{padding:13px 15px;border-left:2px solid var(--restaurant-gold);background:rgba(216,183,121,.08);font-size:11px;line-height:1.8;color:#d8c9ad;margin:18px 0 0}
+    .restaurant-demo .location-panel{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .restaurant-demo .location-art{min-height:240px;background:linear-gradient(135deg,rgba(216,183,121,.14),transparent),repeating-linear-gradient(45deg,#131b22 0 1px,#0d1319 1px 18px);border:1px solid rgba(216,183,121,.2);display:grid;place-items:center;color:var(--restaurant-gold);letter-spacing:.2em;text-transform:uppercase;font-size:10px}
+    .restaurant-demo .demo-notice{max-width:1160px;margin:18px auto 0;padding:15px 22px;border:1px solid rgba(216,183,121,.35);border-left:3px solid var(--restaurant-gold);background:#121a20;color:#f0dfbd;font-size:11px;line-height:1.8}
+    .restaurant-demo .demo-notice p{margin:4px 0 0;color:#c0b8a9}
+    @media(max-width:760px){.restaurant-demo .bf-header{height:auto;min-height:78px;flex-wrap:wrap;padding:14px 20px;gap:12px}.restaurant-demo .bf-nav{order:3;width:100%;overflow-x:auto;white-space:nowrap}.restaurant-demo .restaurant-hero{min-height:590px;padding:80px 24px 60px!important;background-position:60% center!important}.restaurant-demo .project-page section{padding:58px 22px}.restaurant-demo .story-grid,.restaurant-demo .reservation-wrap,.restaurant-demo .location-panel{grid-template-columns:1fr}.restaurant-demo .menu-grid{grid-template-columns:1fr}.restaurant-demo .gallery-grid{grid-template-columns:1fr 1fr}.restaurant-demo .gallery-item:first-child{grid-row:auto;min-height:250px;grid-column:1/-1}.restaurant-demo .reservation-form{padding:20px}.restaurant-demo .reservation-form form{grid-template-columns:1fr}.restaurant-demo .reservation-form .full{grid-column:auto}.restaurant-demo .demo-notice{margin:14px 16px 0}}
+    @media(prefers-reduced-motion:reduce){.restaurant-demo *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
 </head>
-<body class="bf-experience bf-interior">
+<body class="bf-experience bf-interior restaurant-demo">
   <a class="skip-link" href="#main">Skip to content</a>
-<header class="bf-header">
- <a class="bf-brand" href="../../index.html" aria-label="BuildFlow Support home"><img src="../../assets/images/logo.png" alt="BuildFlow Support" width="180" height="45"></a>
- <nav class="bf-nav" aria-label="Main navigation">
-  <a href="../../index.html">Home</a><a href="../../services.html">Services</a><a href="../../portfolio.html">Work</a><a href="../../about.html">About</a><a href="../../blog.html">Journal</a>
- </nav>
- <a class="bf-nav-cta" href="../../contact.html">Start a project <span aria-hidden="true">↗</span></a>
-</header>
-<section class="bf-demo-notice" aria-label="Demo notice"><strong>Portfolio demonstration — not a live client website.</strong><p>This concept uses illustrative business details and sample content. Prices, reviews, availability, listings, and service claims are placeholders. Demo forms do not submit or store information. Replace all sample content with verified details before any real launch.</p></section>
-
-  <main id="main" class="container project-page">
-    <section class="project-hero hero-card">
-      <div class="project-hero-copy">
-        <div class="section-label">Project</div>
-        <h1 class="hero-title">Restaurant Website</h1>
-        <p class="hero-copy">Modern dining websites with menus, reservations, and online ordering.</p>
-        <div class="button-row">
-          <a class="button" href="mailto:Support@buildflowsupport.org">Contact Us</a>
-          <a class="button-secondary" href="../../portfolio.html">Back to Portfolio</a>
-        </div>
+  <header class="bf-header">
+    <a class="bf-brand" href="#top" aria-label="Maison Ember home">MAISON EMBER</a>
+    <nav class="bf-nav" aria-label="Restaurant navigation">
+      <a href="#story">Our story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a>
+    </nav>
+    <a class="bf-nav-cta" href="#reservations">Reserve a table <span aria-hidden="true">↗</span></a>
+  </header>
+  <div class="demo-notice"><strong>BuildFlow portfolio concept — fictional restaurant.</strong><p>Maison Ember, its menu, dishes, prices, location, and reservation details are illustrative placeholders. This page is a design demonstration, not a real restaurant or booking service.</p></div>
+  <main id="main" class="project-page">
+    <section class="restaurant-hero" id="top">
+      <div>
+        <p class="eyebrow">A MODERN MEDITERRANEAN TABLE · FICTIONAL CONCEPT</p>
+        <h1>Gather around<br><span>something beautiful.</span></h1>
+        <p class="hero-copy">Seasonal ingredients. Fire-led cooking. A slower kind of evening. Discover the Maison Ember dining concept.</p>
+        <div class="restaurant-actions"><a class="restaurant-button" href="#menu">Explore the menu</a><a class="restaurant-button secondary" href="#reservations">Reservation preview</a></div>
       </div>
     </section>
 
-    <section class="project-description">
-      <h2 class="section-title">About the Restaurant</h2>
-      <p>This restaurant website features an elegant dining experience with clear menu navigation, reservation booking, and a focus on food photography. It is designed to attract customers, showcase offerings, and support online reservations.</p>
+    <section id="story">
+      <div class="story-grid">
+        <div class="section-intro">
+          <p class="restaurant-eyebrow">THE MAISON EMBER APPROACH</p>
+          <h2>Made for the moments that bring us together.</h2>
+          <p>Maison Ember is an imagined neighborhood restaurant inspired by the warmth of open-fire cooking and the generous spirit of Mediterranean dining. The concept pairs thoughtful seasonal plates with an intimate, contemporary atmosphere.</p>
+          <p>Every detail—from the first welcome to the final course—is designed around good food and unhurried conversation.</p>
+        </div>
+        <div class="story-photo" role="img" aria-label="Restaurant atmosphere photograph used as a visual concept"></div>
+      </div>
     </section>
 
-    <section class="project-features">
-      <h2 class="section-title">Food Menu</h2>
+    <section id="menu">
+      <div class="section-intro">
+        <p class="restaurant-eyebrow">A TASTE OF THE MENU</p>
+        <h2>Seasonal. Simple. Memorable.</h2>
+        <p>An illustrative menu layout showing how a restaurant can organize signature plates and prices. All dishes and prices below are fictional examples.</p>
+      </div>
       <div class="menu-grid">
-        <div class="menu-card">
-          <h3>Breakfast</h3>
-          <p>Fresh pastries, omelets, and morning favorites.</p>
-        </div>
-        <div class="menu-card">
-          <h3>Lunch</h3>
-          <p>Hearty sandwiches, salads, and seasonal specials.</p>
-        </div>
-        <div class="menu-card">
-          <h3>Dinner</h3>
-          <p>Elegant entrees, chef specialties, and shareable plates.</p>
-        </div>
-        <div class="menu-card">
-          <h3>Drinks</h3>
-          <p>Cocktails, wine pairings, and specialty beverages.</p>
-        </div>
+        <article class="menu-card"><div class="dish-row"><h3>Whipped Ricotta</h3><span class="price">$16</span></div><p>Warm sourdough, wildflower honey, cracked pepper, garden herbs.</p></article>
+        <article class="menu-card"><div class="dish-row"><h3>Charred Octopus</h3><span class="price">$22</span></div><p>Smoked paprika, citrus potatoes, parsley, preserved lemon.</p></article>
+        <article class="menu-card"><div class="dish-row"><h3>Wild Mushroom Pappardelle</h3><span class="price">$28</span></div><p>Hand-cut pasta, roasted mushrooms, thyme, aged pecorino.</p></article>
+        <article class="menu-card"><div class="dish-row"><h3>Wood-Fired Branzino</h3><span class="price">$34</span></div><p>Seasonal greens, olive oil, grilled lemon, fennel.</p></article>
+        <article class="menu-card"><div class="dish-row"><h3>Rosemary Half Chicken</h3><span class="price">$30</span></div><p>Pan jus, crispy potatoes, roasted garlic, market vegetables.</p></article>
+        <article class="menu-card"><div class="dish-row"><h3>Olive Oil Cake</h3><span class="price">$13</span></div><p>Whipped mascarpone, orange zest, seasonal berries.</p></article>
       </div>
     </section>
 
-    <section class="chef-section">
-      <h2 class="section-title">Chef Section</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h3>Meet the Chef</h3>
-          <p>Skilled culinary leadership behind every menu item.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Signature Dishes</h3>
-          <p>Highlighting the restaurant’s most popular and unique favorites.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery-section">
-      <h2 class="section-title">Photo Gallery</h2>
+    <section id="gallery">
+      <div class="section-intro"><p class="restaurant-eyebrow">THE ATMOSPHERE</p><h2>A place to linger.</h2><p>A flexible image gallery gives the restaurant space to tell its story through food, interiors, and details.</p></div>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="../../assets/images/demo-restaurant.svg" alt="Restaurant website design concept" loading="lazy" width="640" height="400"></div>
-        <div class="gallery-item"><img src="../../assets/images/demo-restaurant.svg" alt="Restaurant website design concept" loading="lazy" width="640" height="400"></div>
-        <div class="gallery-item"><img src="../../assets/images/demo-restaurant.svg" alt="Restaurant website design concept" loading="lazy" width="640" height="400"></div>
-        <div class="gallery-item"><img src="../../assets/images/demo-restaurant.svg" alt="Restaurant website design concept" loading="lazy" width="640" height="400"></div>
+        <div class="gallery-item" role="img" aria-label="Restaurant interior photograph"></div>
+        <div class="gallery-item" role="img" aria-label="Abstract warm-toned food photography placeholder"></div>
+        <div class="gallery-item" role="img" aria-label="Abstract green seasonal ingredient photography placeholder"></div>
+        <div class="gallery-item" role="img" aria-label="Abstract dessert photography placeholder"></div>
       </div>
     </section>
 
-    <section class="reservation-form">
-      <h2 class="section-title">Reservation Form</h2>
-      <form class="contact-form" action="#" onsubmit="return false;" method="post" enctype="text/plain">
-        <input type="hidden" name="_next" value="https://buildflow-20.netlify.app/thank-you.html">
-        <label for="guest-name">Name</label>
-        <input id="guest-name" name="Name" type="text" placeholder="Your name" required>
-        <label for="guest-email">Email</label>
-        <input id="guest-email" name="Email" type="email" placeholder="example@business.test" required>
-        <label for="guest-date">Date</label>
-        <input id="guest-date" name="Date" type="date" required>
-        <label for="guest-time">Time</label>
-        <input id="guest-time" name="Time" type="time" required>
-        <label for="guest-party">Party Size</label>
-        <input id="guest-party" name="Party Size" type="number" min="1" placeholder="Number of guests" required>
-        <button type="submit" class="button">Reserve Table</button>
-      </form>
+    <section id="reservations">
+      <div class="reservation-wrap">
+        <div class="section-intro">
+          <p class="restaurant-eyebrow">YOUR TABLE AWAITS</p>
+          <h2>Plan an evening at the table.</h2>
+          <p>This reservation interface demonstrates a clear, accessible booking form. A real restaurant would connect it to its approved reservation platform and confirm availability before accepting bookings.</p>
+          <p>For a real project, the booking provider, notifications, privacy requirements, and any platform fees would be agreed before launch.</p>
+        </div>
+        <div class="reservation-form">
+          <form action="#" method="post" onsubmit="return false;">
+            <label for="guest-name">Your name<input id="guest-name" name="name" type="text" autocomplete="name" placeholder="Full name" disabled></label>
+            <label for="guest-email">Email address<input id="guest-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" disabled></label>
+            <label for="guest-date">Preferred date<input id="guest-date" name="date" type="date" disabled></label>
+            <label for="guest-time">Preferred time<select id="guest-time" name="time" disabled><option>Select a time</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option></select></label>
+            <label for="guest-party" class="full">Number of guests<select id="guest-party" name="party-size" disabled><option>Select party size</option><option>1–2 guests</option><option>3–4 guests</option><option>5–6 guests</option></select></label>
+            <button type="button" class="full" disabled>Demo only · Booking unavailable</button>
+          </form>
+          <p class="demo-only">This form is intentionally disabled. It does not send, save, or confirm a reservation. No personal information is collected by this demonstration.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="location-section">
-      <h2 class="section-title">Location</h2>
-      <p>Downtown dining destination with easy access and ample parking.</p>
-      <div class="map-placeholder">Map placeholder</div>
+    <section id="visit">
+      <div class="location-panel">
+        <div><p class="restaurant-eyebrow">FIND YOUR WAY</p><h2>Make an evening of it.</h2><p>Address, opening hours, accessibility information, and parking details would appear here after the restaurant provides verified business information.</p><p><strong>Location:</strong> Sample location · Replace before launch</p><p><strong>Hours:</strong> Sample hours · Confirm with the business</p></div>
+        <div class="location-art" role="img" aria-label="Decorative map placeholder">Map integration preview</div>
+      </div>
     </section>
 
-    <section class="contact-section">
-      <h2 class="section-title">Contact</h2>
-      <p>Questions or special requests? Reach out at <a href="mailto:Support@buildflowsupport.org">Support@buildflowsupport.org</a> or call <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
-    </section>
-
-    <section class="project-cta">
-      <h2 class="section-title">Ready to build?</h2>
-      <p>Contact BuildFlow to bring your restaurant website project to life.</p>
-      <div class="button-row">
-        <a class="button" href="mailto:Support@buildflowsupport.org">Contact Us</a>
-        <a class="button-secondary" href="../../portfolio.html">Back to Portfolio</a>
+    <section>
+      <div class="section-intro">
+        <p class="restaurant-eyebrow">BUILT BY BUILDFLOW SUPPORT</p>
+        <h2>Could your restaurant have a website like this?</h2>
+        <p>This concept demonstrates how a restaurant can present its identity, menu, atmosphere, and booking journey in one responsive website.</p>
+        <div class="restaurant-actions"><a class="restaurant-button" href="../../contact.html">Discuss a website project</a><a class="restaurant-button secondary" href="../../portfolio.html">Back to BuildFlow work</a></div>
       </div>
     </section>
   </main>
+  <footer class="bf-footer">
+    <div class="bf-footer-top"><a class="bf-footer-brand" href="#top">MAISON EMBER<small>FICTIONAL RESTAURANT CONCEPT</small></a><p>Thoughtful dining.<br>Illustrative experience.</p><div class="bf-footer-links"><a href="#story">Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reservations">Reservations</a></div></div>
+    <div class="bf-footer-bottom"><span>Fictional concept designed for the BuildFlow Support portfolio.</span><span><a href="../../index.html">BuildFlow Support</a> · <a href="../../contact.html">Project inquiries</a></span></div>
+  </footer>
   <script src="../../assets/js/script.js"></script>
-    <footer>
-        <nav class="footer-nav">
-            <a href="../../index.html">Home</a>
-            <a href="../../about.html">About</a>
-            <a href="../../services.html">Services</a>
-            <a href="../../portfolio.html">Portfolio</a>
-            <a href="../../pricing.html">Pricing</a>
-            <a href="../../blog.html">Blog</a>
-            <a href="../../contact.html">Contact</a>
-        </nav>
-        <nav class="footer-secondary">
-            <a href="../../privacy.html">Privacy Policy</a>
-            <a href="../../terms.html">Terms</a>
-            <a href="../../faq.html">FAQ</a>
-        </nav>
-        <p>© 2026 BuildFlow</p>
-    </footer>
-<footer class="bf-footer">
- <div class="bf-footer-top"><a class="bf-footer-brand" href="../../index.html">BUILD<span>FLOW</span><small>SUPPORT</small></a><p>Digital foundations for<br>what comes next.</p><div class="bf-footer-links"><a href="../../services.html">Services</a><a href="../../portfolio.html">Work</a><a href="../../pricing.html">Pricing</a><a href="../../contact.html">Contact</a></div></div>
- <div class="bf-footer-bottom"><span>© 2026 BuildFlow Support. Demonstration concept.</span><span><a href="mailto:Support@buildflowsupport.org">Email us</a> · <a href="../../portfolio.html">Back to portfolio</a></span></div>
-</footer>
 </body>
 </html>
