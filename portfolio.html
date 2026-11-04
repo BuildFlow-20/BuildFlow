@@ -1,151 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Portfolio | BuildFlow Support</title>
-
-<meta name="description" content="Explore BuildFlow Support’s sample website and digital workflow concepts. Demonstrations are examples, not paid client projects or verified results.">
-
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow"><title>Portfolio | BuildFlow Support</title>
+<meta name="description" content="Explore BuildFlow Support's responsive website concepts for restaurants, hotels, healthcare, fitness, real estate, and retail.">
+<meta name="theme-color" content="#070b16"><link rel="canonical" href="https://buildflowsupport.org/portfolio.html">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
-<link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-
-<div class="page">
-
-<header>
-
-<div class="brand">
-<a href="index.html">
-<img src="assets/images/logo.png" alt="BuildFlow Support Logo" width="180" height="45">
-</a>
-</div>
-
-<nav aria-label="Main Navigation">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="pricing.html">Pricing</a>
-<a href="blog.html">Blog</a>
-<a href="contact.html">Contact</a>
-</nav>
-
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/experience.css"><link rel="stylesheet" href="assets/css/interior.css">
+<style>
+.bf-portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}
+.bf-portfolio-card{overflow:hidden;border:1px solid rgba(133,160,197,.22);background:linear-gradient(145deg,#101c2d,#0a1220);transition:transform .2s ease,border-color .2s ease}
+.bf-portfolio-card:hover{transform:translateY(-4px);border-color:rgba(79,205,246,.65)}
+.bf-portfolio-card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#0c1523}
+.bf-portfolio-card-copy{padding:23px}
+.bf-portfolio-card .bf-card-number{color:#7d9aba;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.bf-portfolio-card h2{font-size:25px;margin:10px 0}
+.bf-portfolio-card p{color:#aebbd0;line-height:1.8;font-size:13px}
+.bf-portfolio-card a{display:inline-flex;margin-top:10px;color:#55d4f6;font-weight:700;font-size:12px;text-decoration:none}
+.bf-portfolio-card a:focus-visible{outline:2px solid #55d4f6;outline-offset:4px}
+.bf-portfolio-video{margin-top:64px;padding:clamp(25px,5vw,54px);border:1px solid rgba(133,160,197,.25);background:radial-gradient(ellipse at 50% 0%,rgba(35,103,166,.2),transparent 65%),#0b1422}
+.bf-portfolio-video h2{font-size:clamp(30px,4vw,46px);margin:8px 0 14px}
+.bf-portfolio-video p{max-width:650px;color:#aebbd0;line-height:1.8}
+@media(max-width:720px){.bf-portfolio-grid{grid-template-columns:1fr}.bf-portfolio-card-copy{padding:19px}}
+@media(prefers-reduced-motion:reduce){.bf-portfolio-card{transition:none}.bf-portfolio-card:hover{transform:none}}
+</style></head>
+<body class="bf-experience bf-interior"><div class="site-shell">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="bf-header">
+ <a class="bf-brand" href="index.html" aria-label="BuildFlow Support home"><img src="assets/images/logo.png" alt="BuildFlow Support" width="180" height="45"></a>
+ <nav class="bf-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="portfolio.html" aria-current="page">Work</a><a href="about.html">About</a><a href="blog.html">Journal</a></nav>
+ <a class="bf-nav-cta" href="contact.html">Start a project <span aria-hidden="true">↗</span></a>
 </header>
-
-<main>
-
-<section class="hero">
-
-<h1>Our Portfolio</h1>
-
-<p>
-Explore sample concepts showing the types of website and digital workflow projects BuildFlow Support is developing.
-</p>
-<p class="portfolio-note" role="note" style="max-width:780px;margin:20px auto 0;color:#cbd5e1;">
-These are demonstration concepts for illustration and practice. They are not presented as paid client projects or verified client results.
-</p>
-
-</section>
-
-<section class="services-grid">
-
-<div class="service-card">
-<h3>🤖 AI Chatbot Demo</h3>
-<p>Sample chatbot concept for common questions and lead inquiries.</p>
+<main id="main">
+<section class="bf-page-hero"><p class="bf-kicker">BUILDFLOW SUPPORT / SELECTED CONCEPTS</p><h1>Ideas made <em>visible.</em></h1><p>Explore responsive website demonstrations across different industries. Each concept shows how thoughtful design can make a business easier to discover, understand, and contact.</p></section>
+<section class="bf-page-body">
+<div class="bf-page-label">THE PROJECT GALLERY</div><h2 class="bf-page-heading">Different industries.<br><em>Thoughtful digital experiences.</em></h2>
+<div class="bf-portfolio-grid">
+ <article class="bf-portfolio-card"><img src="assets/images/demo-restaurant.svg" alt="Restaurant website concept preview" loading="lazy" width="800" height="450"><div class="bf-portfolio-card-copy"><span class="bf-card-number">01 / HOSPITALITY</span><h2>Restaurant experience</h2><p>A refined restaurant concept with a sample menu, gallery, story, and reservation journey.</p><a href="projects/restaurant/">Explore restaurant demo ↗</a></div></article>
+ <article class="bf-portfolio-card"><img src="assets/images/demo-hotel.svg" alt="Hotel website concept preview" loading="lazy" width="800" height="450"><div class="bf-portfolio-card-copy"><span class="bf-card-number">02 / HOSPITALITY</span><h2>Hotel experience</h2><p>A welcoming hotel concept focused on rooms, amenities, destination details, and guest inquiries.</p><a href="projects/hotel/">Explore hotel demo ↗</a></div></article>
+ <article class="bf-portfolio-card"><img src="assets/images/demo-healthcare.svg" alt="Healthcare website concept preview" loading="lazy" width="800" height="450"><div class="bf-portfolio-card-copy"><span class="bf-card-number">03 / HEALTHCARE</span><h2>Healthcare website</h2><p>A clear clinic concept with accessible information, service descriptions, and contact paths.</p><a href="projects/dentist/">Explore healthcare demo ↗</a></div></article>
+ <article class="bf-portfolio-card"><img src="assets/images/demo-fitness.svg" alt="Fitness website concept preview" loading="lazy" width="800" height="450"><div class="bf-portfolio-card-copy"><span class="bf-card-number">04 / FITNESS</span><h2>Fitness studio</h2><p>A high-energy concept for presenting classes, memberships, facilities, and new-member inquiries.</p><a href="projects/gym/">Explore fitness demo ↗</a></div></article>
+ <article class="bf-portfolio-card"><img src="assets/images/demo-real-estate.svg" alt="Real estate website concept preview" loading="lazy" width="800" height="450"><div class="bf-portfolio-card-copy"><span class="bf-card-number">05 / REAL ESTATE</span><h2>Real estate experience</h2><p>A property-focused concept for showcasing listings, neighborhood information, and agent contact.</p><a href="projects/real-estate/">Explore real estate demo ↗</a></div></article>
+ <article class="bf-portfolio-card"><img src="assets/images/demo-business.svg" alt="Retail and local business website concept preview" loading="lazy" width="800" height="450"><div class="bf-portfolio-card-copy"><span class="bf-card-number">06 / RETAIL & LOCAL</span><h2>Retail & local business</h2><p>A flexible storefront and service-business concept designed to make products and services easy to explore.</p><a href="projects/business/">Explore business demo ↗</a></div></article>
 </div>
-
-<div class="service-card">
-<h3>🌐 Website Design Concept</h3>
-<p>Sample responsive layout for a small business website.</p>
-</div>
-
-<div class="service-card">
-<h3>📞 AI Voice Agent Concept</h3>
-<p>Illustrative AI receptionist concept; real integrations and usage costs must be confirmed per project.</p>
-</div>
-
-<div class="service-card">
-<h3>💬 CRM Workflow Concept</h3>
-<p>Sample workflow concept for tracking inquiries and follow-ups.</p>
-</div>
-
-<div class="service-card">
-<h3>📅 Booking Flow Concept</h3>
-<p>Sample booking flow concept; a live booking tool may require a separate account.</p>
-</div>
-
-<div class="service-card">
-<h3>⚙️ Workflow Automation Concept</h3>
-<p>Example workflow concept for reducing repetitive administrative steps.</p>
-</div>
-
-</section>
-
-<section class="cta">
-
-<h2>Want a Project Like This?</h2>
-
-<p>
-Tell us about the website or digital workflow you would like to explore.
-</p>
-
-<a href="contact.html" class="btn-primary">
-Start Your Project
-</a>
-<a href="demo-gallery.html" class="btn-secondary">Browse Demo Gallery</a>
-
-</section>
-
-</main>
-
-<footer>
-
-<h2>BuildFlow Support</h2>
-
-<p>
-Practical websites and digital workflows for small businesses.
-</p>
-
-<nav class="footer-nav" aria-label="Footer Navigation">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="pricing.html">Pricing</a>
-<a href="blog.html">Blog</a>
-<a href="faq.html">FAQ</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-<nav class="footer-secondary" aria-label="Legal Navigation">
-<a href="privacy-policy.html">Privacy Policy</a>
-<a href="terms-of-service.html">Terms of Service</a>
-</nav>
-
-<div class="footer-contact">
-<p><strong>Email:</strong> <a href="mailto:Support@buildflowsupport.org">Support@buildflowsupport.org</a></p>
-<p><strong>Website:</strong> <a href="https://buildflowsupport.org">buildflowsupport.org</a></p>
-<p><strong>Location:</strong> Connecticut, USA</p>
-</div>
-
-<p class="copyright">
-© 2026 BuildFlow Support. All Rights Reserved.
-</p>
-
-<button id="theme-toggle" class="btn-secondary">🌙 Dark Mode</button>
-
-<button id="topBtn" title="Back to Top">⬆️</button>
-
-</footer>
-
-<script src="assets/js/script.js"></script>
-
-</body>
-</html>
+<div class="bf-note">Portfolio demonstrations may include fictional business names, sample content, and illustrative interactions. They are not paid client projects, testimonials, or verified business results.</div>
+<section class="bf-portfolio-video" aria-labelledby="portfolio-video-title"><p class="bf-kicker">BUILDFLOW / INTRODUCTION</p><h2 id="portfolio-video-title">See what we can build together.</h2><p>A short BuildFlow introduction video will be featured here. It can introduce our approach, website services, and selected demonstrations.</p><p><strong>Video coming soon.</strong> This section will be updated when the approved video is ready.</p></section>
+<div class="bf-page-cta"><h2>Have a project in mind?</h2><p>Tell us about your business and the digital experience you want to create.</p><a class="bf-button bf-button-primary" href="contact.html">Start a conversation ↗</a></div>
+</section></main>
+<footer class="bf-footer"><div class="bf-footer-top"><a class="bf-footer-brand" href="index.html">BUILD<span>FLOW</span><small>SUPPORT</small></a><p>Digital foundations for<br>what comes next.</p><div class="bf-footer-links"><a href="services.html">Services</a><a href="portfolio.html">Work</a><a href="pricing.html">Pricing</a><a href="blog.html">Journal</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div></div><div class="bf-footer-bottom"><span>© 2026 BuildFlow Support. All rights reserved.</span><span>Connecticut, USA · <a href="mailto:Support@buildflowsupport.org">Email us</a></span><span><a href="privacy-policy.html">Privacy</a> · <a href="terms-of-service.html">Terms</a> · <a href="accessibility.html">Accessibility</a></span></div></footer>
+</div><script src="assets/js/script.js"></script></body></html>
